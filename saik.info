@@ -13,12 +13,15 @@ dependencies[] = menu
 dependencies[] = help
 dependencies[] = menu
 dependencies[] = taxonomy
-dependencies[] = admin_menu
-dependencies[] = ctools
-dependencies[] = panels
-dependencies[] = views
 
 
 ; NodeStream things
 dependencies[] = ns_roles
+dependencies[] = ns_ad
+dependencies[] = ns_article
+dependencies[] = ns_page
+dependencies[] = ns_roles
+dependencies[] = ns_footer_content
+dependencies[] = ns_media
+dependencies[] = ns_promo
 
