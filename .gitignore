@@ -30,3 +30,5 @@ xmlrpc.php
 /scripts
 /themes
 
+modules/contrib
+libraries/
