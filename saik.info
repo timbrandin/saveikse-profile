@@ -10,11 +10,14 @@ dependencies[] = ns_core
 
 ; Core
 dependencies[] = menu
-dependencies[] = dblog
 dependencies[] = help
 dependencies[] = menu
 dependencies[] = taxonomy
-dependencies[] = toolbar
+dependencies[] = admin_menu
+dependencies[] = ctools
+dependencies[] = panels
+dependencies[] = views
+
 
 ; NodeStream things
 dependencies[] = ns_roles
