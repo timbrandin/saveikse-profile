@@ -11,11 +11,11 @@
  * This is necessary since a lot of components needs
  * to have everything in place before import can be run safely.
  */
-function temp_install_tasks(&$install_state) {
+function saik_install_tasks(&$install_state) {
   // Indicate to default config that we want to handle this ourselves.
   variable_get('defaultconfig_site_install', FALSE);
   return array(
-    'temp_finish' => array(
+    'saik_finish' => array(
       'display_name' => st('Apply configuration'),
       'display' => TRUE,
       'type' => 'batch',
@@ -26,7 +26,7 @@ function temp_install_tasks(&$install_state) {
 /**
  * Implements hook_defaultconfig_site_install().
  */
-function temp_defaultconfig_site_install() {
+function saik_defaultconfig_site_install() {
   // We want to handle installation of configuration ourselves.
   return FALSE;
 }
@@ -34,7 +34,7 @@ function temp_defaultconfig_site_install() {
 /**
  * Apply configuration for default config.
  */
-function temp_finish() {
+function saik_finish() {
   // Rebuild default components.
   if (module_exists('defaultconfig')) {
     drupal_flush_all_caches();

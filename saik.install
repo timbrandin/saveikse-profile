@@ -7,7 +7,7 @@
 /**
  * Implements hook_install().
  */
-function temp_install() {
+function saik_install() {
   // We use seven as our admin theme.
   theme_enable(array('seven'));
   $variables = array(
