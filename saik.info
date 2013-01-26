@@ -13,6 +13,7 @@ dependencies[] = menu
 dependencies[] = help
 dependencies[] = menu
 dependencies[] = taxonomy
+dependencies[] = admin_menu
 
 
 ; NodeStream things
