@@ -26,3 +26,5 @@ dependencies[] = ns_footer_content
 dependencies[] = ns_media
 dependencies[] = ns_promo
 
+; Savedalens AIK
+dependencies[] = saik_pages
