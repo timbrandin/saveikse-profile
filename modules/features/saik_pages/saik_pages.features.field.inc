@@ -89,14 +89,14 @@ function saik_pages_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-ns_page-field_preambel'.
-  $fields['node-ns_page-field_preambel'] = array(
+  // Exported field: 'node-ns_page-field_preamble'.
+  $fields['node-ns_page-field_preamble'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_preambel',
+      'field_name' => 'field_preamble',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -144,8 +144,8 @@ function saik_pages_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_preambel',
-      'label' => 'Preambel',
+      'field_name' => 'field_preamble',
+      'label' => 'Preamble',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -247,7 +247,7 @@ function saik_pages_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Attachments');
-  t('Preambel');
+  t('Preamble');
   t('Side note');
 
   return $fields;
