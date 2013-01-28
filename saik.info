@@ -14,7 +14,8 @@ dependencies[] = help
 dependencies[] = menu
 dependencies[] = taxonomy
 dependencies[] = admin_menu
-
+dependencies[] = panels
+dependencies[] = page_manager
 
 ; NodeStream things
 dependencies[] = ns_roles
