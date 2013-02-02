@@ -28,7 +28,7 @@ xmlrpc.php
 /modules/contrib     
 /profiles
 /scripts
-/themes
 
 modules/contrib
+themes/contrib
 libraries/
