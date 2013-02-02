@@ -152,7 +152,7 @@ function saik_pages_default_page_manager_handlers() {
     $pane->pid = 'new-4';
     $pane->panel = 'main';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_preambel';
+    $pane->subtype = 'node:field_preamble';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
