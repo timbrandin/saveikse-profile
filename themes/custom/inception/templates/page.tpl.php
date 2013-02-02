@@ -7,7 +7,8 @@
 <div id="main_container"> 
   <header id="header"><div class="section clearfix">
     <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo">
+      <a href="<?php print $front_page; ?>"
+         title="<?php print t('Home'); ?>" rel="home" class="logo">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a>
     <?php endif; ?>
@@ -17,11 +18,15 @@
         <?php if ($site_name): ?>
           <?php if ($title): ?>
             <div id="site-name"><strong>
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+              <a href="<?php print $front_page; ?>"
+                 title="<?php print t('Home'); ?>"
+                 rel="home"><span><?php print $site_name; ?></span></a>
             </strong></div>
           <?php else: /* Use h1 when the content title is empty */ ?>
             <h1 id="site-name">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+              <a href="<?php print $front_page; ?>"
+                 title="<?php print t('Home'); ?>"
+                 rel="home"><span><?php print $site_name; ?></span></a>
             </h1>
           <?php endif; ?>
         <?php endif; ?>
@@ -53,7 +58,7 @@
   <div id="header_top">
     <div class="header_top_border"></div>
     <a class="home-icon toggle" href="/">
-      <img src="<?php print drupal_get_path('theme', 'fontfolio') 
+      <img src="<?php print $base_path . drupal_get_path('theme', 'fontfolio') 
               . '/styles/images/glyphicons_020_home.png'; ?>" /></a>
   <?php if ($social_links): ?>
     <div class="social">
@@ -63,7 +68,7 @@
     <?php endif; ?>
     <?php if (isset($page['search'])): ?>
     <a class="toggle-search toggle" href="#header_top">
-      <img src="<?php print drupal_get_path('theme', 'fontfolio') 
+      <img src="<?php print $base_path . drupal_get_path('theme', 'fontfolio') 
               . '/styles/images/glyphicons_027_search.png'; ?>" /></a>
       <div class="search">
         <?php print render($page['search']); ?>
@@ -84,7 +89,9 @@
       </nav><!--//langs-->
     <?php endif; ?>
     <?php if ($main_menu): ?>
-      <a class="toggle-nav toggle" href="#header_top"><img src="<?php print $base_path . $directory ?>/styles/images/icon_nav_toggle-black.gif"></a> 
+      <a class="toggle-nav toggle" href="#header_top">
+        <img src="<?php print $base_path . drupal_get_path('theme', 'fontfolio') 
+              . '/styles/images/icon_nav_toggle-black.gif'; ?>"></a> 
       <nav class="menu_cont">
         <div class="social">
           <?php print $social_links; ?>
@@ -122,14 +129,17 @@
       <div id="content" class="column">
         <div class="section">
         <a id="main-content"></a>
-        <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+        <?php if ($tabs): ?><div class="tabs">
+          <?php print render($tabs); ?></div><?php endif; ?>
         <?php print render($page['help']); ?>
-        <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+        <?php if ($action_links): ?><ul class="action-links">
+          <?php print render($action_links); ?></ul><?php endif; ?>
         <?php if (!$is_front && (arg(0) != 'taxonomy')) :?>
           <div id="single_left">
         <?php endif;?>
         <?php print render($title_prefix); ?>
-        <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+        <?php if ($title): ?><h1 class="title" id="page-title">
+          <?php print $title; ?></h1><?php endif; ?>
         <?php print render($title_suffix); ?>
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>

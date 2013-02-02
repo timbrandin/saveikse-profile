@@ -30,3 +30,6 @@ dependencies[] = ns_promo
 ; Savedalens AIK
 dependencies[] = saik_main
 dependencies[] = saik_pages
+
+; Other
+dependencies[] = jquery_update

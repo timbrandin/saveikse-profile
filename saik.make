@@ -11,6 +11,10 @@ projects[fontfolio][type] = theme
 projects[fontfolio][version] = 2.3
 projects[fontfolio][subdir] = contrib
 
+; Other
+projects[jquery_update][type] = module
+projects[jquery_update][version] = 2.2
+projects[jquery_update][subdir] = contrib
 
 ; Patches
 
