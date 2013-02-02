@@ -18,6 +18,7 @@ features[defaultconfig][] = strongarm:site_name
 features[defaultconfig][] = strongarm:theme_default
 features[features_api][] = api:1
 features[filter][] = saik_wysiwyg
+features[user_permission][] = use text format saik_wysiwyg
 features[variable][] = jquery_update_jquery_cdn
 features[variable][] = theme_inception_settings
 features[wysiwyg][] = saik_wysiwyg
