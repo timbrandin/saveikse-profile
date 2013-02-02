@@ -1,7 +1,7 @@
 name = SAIK main
 description = Holder of site configuration.
 core = 7.x
-package = Features
+package = Savedalens AIK
 dependencies[] = features
 dependencies[] = filter
 dependencies[] = media
