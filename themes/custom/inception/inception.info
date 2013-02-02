@@ -2,4 +2,4 @@ name = Inception
 description = Inception is a theme for Sävedalens AIK, and is created by Tim Brandin & Oscar Andreasson.
 core = 7.x
 
-base theme = fontfolio
+base theme = bootstrap

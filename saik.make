@@ -10,9 +10,9 @@ projects[ns_core][subdir] = contrib
 
 ; --- Theme ---
 
-projects[fontfolio][type] = theme
-projects[fontfolio][version] = 2.3
-projects[fontfolio][subdir] = contrib
+projects[bootstrap][type] = theme
+projects[bootstrap][version] = 2.0-beta2
+projects[bootstrap][subdir] = contrib
 
 
 
