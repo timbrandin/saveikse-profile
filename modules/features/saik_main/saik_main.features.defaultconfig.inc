@@ -62,6 +62,13 @@ function saik_main_defaultconfig_strongarm() {
   $strongarm->name = 'theme_default';
   $strongarm->value = 'fontfolio';
   $export['theme_default'] = $strongarm;
+  
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'jquery_update_jquery_version';
+  $strongarm->value = '1.8.22';
+  $export['jquery_update_jquery_version'] = $strongarm;
 
   return $export;
 }

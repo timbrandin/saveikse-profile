@@ -13,6 +13,7 @@ features[defaultconfig][] = strongarm:site_default_country
 features[defaultconfig][] = strongarm:site_mail
 features[defaultconfig][] = strongarm:site_name
 features[defaultconfig][] = strongarm:theme_default
+features[defaultconfig][] = strongarm:jquery_update_jquery_version
 features[features_api][] = api:1
 features[filter][] = saik_wysiwyg
 features[wysiwyg][] = saik_wysiwyg
