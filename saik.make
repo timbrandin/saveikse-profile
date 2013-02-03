@@ -25,6 +25,10 @@ projects[jquery_update][download][type] = git
 projects[jquery_update][download][revision] = baff5d1
 projects[jquery_update][subdir] = contrib
 
+; Semantic panels helps us create brilliant markup on panes.
+projects[semantic_panels][type] = module
+projects[semantic_panels][version] = 1.0
+projects[semantic_panels][subdir] = contrib
 
 
 ; --- Patches ---

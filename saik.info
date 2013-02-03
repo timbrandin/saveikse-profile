@@ -33,3 +33,4 @@ dependencies[] = saik_pages
 
 ; Other
 dependencies[] = jquery_update
+dependencies[] = semantic_panels
