@@ -14,7 +14,7 @@ function saik_pages_field_default_fields() {
   $fields['node-ns_page-field_attachments'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_attachments',
@@ -34,8 +34,8 @@ function saik_pages_field_default_fields() {
       'locked' => '0',
       'module' => 'file',
       'settings' => array(
-        'display_default' => 0,
-        'display_field' => 0,
+        'display_default' => 1,
+        'display_field' => 1,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -71,8 +71,8 @@ function saik_pages_field_default_fields() {
       'label' => 'Attachments',
       'required' => 0,
       'settings' => array(
-        'description_field' => 0,
-        'file_directory' => 'attachments',
+        'description_field' => 1,
+        'file_directory' => '',
         'file_extensions' => 'pdf',
         'max_filesize' => '',
         'user_register_form' => FALSE,
