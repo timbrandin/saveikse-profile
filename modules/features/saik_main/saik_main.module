@@ -5,3 +5,46 @@
  */
 
 include_once 'saik_main.features.inc';
+
+/**
+* Implements hook_filter_info().
+*/
+function saik_main_filter_info() {
+  $filters = array();
+  $filters['saik_main_floated_image'] = array(
+    'title' => t('Image float style class'),
+    'description' => t('Finds image and media with floats and replaces with a custom class to achive the same float behavior.'),
+    'prepare callback' => '_saik_main_prepare',
+    'process callback' => '_saik_main_process',
+    'tips callback' => '_saik_main_tips',
+  );
+  return $filters;
+}
+/**
+* Implements filter prepare callback.
+*/
+function _saik_main_prepare($text, $filter, $format, $langcode, $cache, $cache_id) {
+  return $text;
+}
+
+/**
+* Implements filter process callback.
+*/
+function _saik_main_process($text, $filter, $format, $langcode, $cache, $cache_id) {
+  $text = preg_replace('|(<img[^>]*)float\s*:\s*([^;"\']*);?|si', '$1[floatvalue]$2[/floatvalue]', $text);
+  $text = preg_replace('|\[floatvalue\](.+?)\[/floatvalue\]([^\>]*class\s*=\s*["\']){1}([^"]*)|si', '$2float-$1 $3', $text);
+  $text = preg_replace('|(class\s*=\s*["\'][^\>]*){1}([^"]*)\[floatvalue\](.+?)\[/floatvalue\]|si', '$2float-$1 $3', $text);
+  return $text;
+}
+
+/**
+* Implements filter tips callback.
+*/
+function _saik_main_tips($filter, $format, $long) {
+  if ($long) {
+    return t('Float through the attribute style on images and media is found and replaced with a class that achives the same float behavior.');
+  }
+  else {
+    return t('Images and media is floated with classes');
+  }
+}

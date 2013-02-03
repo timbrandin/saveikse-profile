@@ -19,7 +19,7 @@ function saik_main_filter_default_formats() {
     'weight' => '0',
     'filters' => array(
       'filter_html' => array(
-        'weight' => '-10',
+        'weight' => '-49',
         'status' => '1',
         'settings' => array(
           'allowed_html' => '<a> <em> <strong> <u> <p> <blockquote> <ul> <ol> <li> <h2> <h3>',
@@ -28,14 +28,19 @@ function saik_main_filter_default_formats() {
         ),
       ),
       'filter_url' => array(
-        'weight' => '0',
+        'weight' => '-47',
         'status' => '1',
         'settings' => array(
           'filter_url_length' => '72',
         ),
       ),
       'media_filter' => array(
-        'weight' => '2',
+        'weight' => '-46',
+        'status' => '1',
+        'settings' => array(),
+      ),
+      'saik_main_floated_image' => array(
+        'weight' => '-45',
         'status' => '1',
         'settings' => array(),
       ),

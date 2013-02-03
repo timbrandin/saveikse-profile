@@ -3,3 +3,5 @@ description = Inception is a theme for Sävedalens AIK, and is created by Tim Br
 core = 7.x
 
 base theme = bootstrap
+
+stylesheets[all][] = css/layout.css
