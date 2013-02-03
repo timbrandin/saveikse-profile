@@ -188,33 +188,13 @@ function saik_pages_default_page_manager_handlers() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'style' => 'semantic_panels',
-      'settings' => array(
-        'element_title' => array(
-          'type' => '',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'attributes_array' => array(),
-        ),
-        'element_content' => array(
-          'type' => 'div',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'attributes_array' => array(),
-        ),
-        'element_wrapper' => array(
-          'type' => '0',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'attributes_array' => array(),
-        ),
-        'add_default_classes' => 0,
-      ),
+      'style' => 'naked',
+      'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'lead',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -224,7 +204,7 @@ function saik_pages_default_page_manager_handlers() {
     $pane->pid = 'new-4';
     $pane->panel = 'main';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_preamble';
+    $pane->subtype = 'node:field_lead';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -240,31 +220,8 @@ function saik_pages_default_page_manager_handlers() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => array(
-        'element_title' => array(
-          'type' => '0',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'attributes_array' => array(),
-        ),
-        'element_content' => array(
-          'type' => 'div',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'attributes_array' => array(),
-        ),
-        'element_wrapper' => array(
-          'type' => '0',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'attributes_array' => array(),
-        ),
-        'add_default_classes' => 0,
-      ),
-      'style' => 'semantic_panels',
+      'settings' => NULL,
+      'style' => 'naked',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -293,6 +250,7 @@ function saik_pages_default_page_manager_handlers() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'naked',
     );
     $pane->css = array();
     $pane->extras = array();

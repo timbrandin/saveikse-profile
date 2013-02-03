@@ -84,19 +84,19 @@ function saik_pages_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '5',
+        'weight' => '6',
       ),
     ),
   );
 
-  // Exported field: 'node-ns_page-field_preamble'.
-  $fields['node-ns_page-field_preamble'] = array(
+  // Exported field: 'node-ns_page-field_lead'.
+  $fields['node-ns_page-field_lead'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_preamble',
+      'field_name' => 'field_lead',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -120,21 +120,14 @@ function saik_pages_field_default_fields() {
       'bundle' => 'ns_page',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'The <i>Preample</i> is used to introduce the reader to the content.',
+      'description' => 'The <i>Lead</i> is used to introduce the reader to the content.',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
-        ),
-        'full' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '1',
+          'weight' => 5,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -144,8 +137,8 @@ function saik_pages_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_preamble',
-      'label' => 'Preamble',
+      'field_name' => 'field_lead',
+      'label' => 'Lead',
       'required' => 1,
       'settings' => array(
         'linkit' => array(
@@ -162,7 +155,7 @@ function saik_pages_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );
@@ -239,7 +232,7 @@ function saik_pages_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '4',
+        'weight' => '5',
       ),
     ),
   );
@@ -247,9 +240,9 @@ function saik_pages_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Attachments');
-  t('Preamble');
+  t('Lead');
   t('Side note');
-  t('The <i>Preample</i> is used to introduce the reader to the content.');
+  t('The <i>Lead</i> is used to introduce the reader to the content.');
 
   return $fields;
 }
