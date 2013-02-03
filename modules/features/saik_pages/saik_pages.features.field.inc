@@ -120,7 +120,7 @@ function saik_pages_field_default_fields() {
       'bundle' => 'ns_page',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'The <i>Preample</i> is used to introduce the reader to the content.',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
@@ -146,7 +146,7 @@ function saik_pages_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_preamble',
       'label' => 'Preamble',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'linkit' => array(
           'enable' => 0,
@@ -162,7 +162,7 @@ function saik_pages_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '2',
+        'weight' => '1',
       ),
     ),
   );
@@ -249,6 +249,7 @@ function saik_pages_field_default_fields() {
   t('Attachments');
   t('Preamble');
   t('Side note');
+  t('The <i>Preample</i> is used to introduce the reader to the content.');
 
   return $fields;
 }
