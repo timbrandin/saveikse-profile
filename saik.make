@@ -37,4 +37,4 @@ projects[semantic_panels][subdir] = contrib
 projects[ns_core][patch][1904548] = http://drupal.org/files/ns-core-update-ckeditor-1904548-5.patch
 
 ; http://drupal.org/node/1847900
-projects[jquery_update][patch][1847900] = http://drupal.org/files/jquery_update-ui_update-1847900.patch
+projects[jquery_update][patch][1847900] = http://drupal.org/files/jquery_update-ui_update-1847900-13.patch
